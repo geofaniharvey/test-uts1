@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Profils extends Model
+{
+    use HasFactory;
+
+    protected $guarded = ['namatoko'];
+
+    public function kotas()
+    {
+        return $this->belongsTo('App\Models\Kotas');
+    }
+}
